@@ -1,0 +1,13 @@
+.qualities {
+  background-color: $bg-gray;
+  &_points {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &_point {
+    padding: 50px 70px 61px 60px;
+    &:first-child {
+      padding-right: 89px;
+    }
+  }
+}

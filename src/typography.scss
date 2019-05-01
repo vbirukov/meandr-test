@@ -1,0 +1,31 @@
+@import "variables";
+
+a {
+  text-decoration: none;
+  color: $black;
+}
+
+p, a {
+  strong {
+    font-size: 16px;
+    color: $black;letter-spacing: 0.02em;
+    text-transform: uppercase;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+  }
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 54px;
+  letter-spacing: -0.02em;
+  color: $black;
+}
+
+p {
+  font-size: 16px;
+  color: $p-black;
+  line-height: 26px;
+
+}
+

@@ -1,0 +1,40 @@
+@import "variables";
+
+.header {
+  text-align: center;
+  padding-bottom: 142px;
+  padding-top: 165px;
+  .main-title {
+    margin-bottom: 24px;
+  }
+  .application-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 48px;
+    &_link {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+      &_union {
+        position: absolute;
+        border-radius: 50%;
+        background-color: rgba($union-gray, 0.05);
+        left: -46px;
+        z-index: -1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 54px;
+        height: 54px;
+        &_img {
+          width: 14px;
+          height: 14px;
+        }
+      }
+    }
+  }
+}
