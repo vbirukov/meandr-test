@@ -104,28 +104,34 @@
         <div class="application">
             <div class="application_inner">
                 <h2 class="application_inner_header">Теперь расскажите о себе</h2>
-                <form action="" class="application_inner_form">
+                <form action="" class="application_inner_form" id="theForm">
                     <div class="application_inner_form_input-wrapper">
                         <label class="application_inner_form_input-wrapper_label" for="input_name">Фамилия и имя</label>
                         <input class="application_inner_form_input-wrapper_input" type="text" id="input_name" placeholder="Сидоров Александр">
+                        <div class='name_error form_error'>&nbsp;</div>
                     </div>
                     <div class="application_inner_form_input-wrapper">
-                        <label class="application_inner_form_input-wrapper_label" for="input_name">Электронная почта</label>
+                        <label class="application_inner_form_input-wrapper_label" for="input_email">Электронная почта</label>
                         <input class="application_inner_form_input-wrapper_input" type="text" id="input_email" placeholder="Sidorov@yandex.ru">
+                        <div class='email_error form_error'>&nbsp;</div>
                     </div>
                     <div class="application_inner_form_input-wrapper">
-                        <label class="application_inner_form_input-wrapper_label" for="input_name">Телефон</label>
+                        <label class="application_inner_form_input-wrapper_label" for="input_phone">Телефон</label>
                         <input class="application_inner_form_input-wrapper_input" type="text" id="input_phone" placeholder="+7 (999)-328-14-20">
+                        <div class='phone_error form_error'>&nbsp;</div>
                     </div>
                     <div class="application_inner_form_input-wrapper">
                         <label class="application_inner_form_input-wrapper_label" for="input_textarea">Какой деятельностью, не связанной с текущими проектами,
                             вы бы хотели заниматься в рабочее время?</label>
                         <textarea class="application_inner_form_input-wrapper_textarea" name="" id="input_textarea" cols="30" rows="10"
                                   placeholder="Свой проект по созданию универсальной инфраструктуры строительства"></textarea>
+                        <div class='textarea_error form_error'>&nbsp;</div>
                     </div>
                     <button class="application_inner_form_button">Отправить</button>
                 </form>
             </div>
         </div>
+
+    <script src="./main.js"></script>
 </body>
 </html>
