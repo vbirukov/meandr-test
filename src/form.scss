@@ -1,0 +1,91 @@
+@import "variables";
+
+.application {
+  background-color: $application_black;
+  padding-top: 100px;
+  padding-bottom: 120px;
+  &_inner {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &_header {
+      margin-bottom: 82px;
+    }
+    &_form {
+      counter-reset: input;
+      max-width: 575px;
+      width: 75%;
+      &_input-wrapper {
+        margin-bottom: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(#F7F8FA, 0.1);
+        &:last-child {
+          margin-bottom: 60px;
+        }
+        &_label {
+          margin-bottom: 24px;
+          position: relative;
+          &::before {
+            counter-increment: input;
+            content: counter(input);
+            position: absolute;
+            left: -92px;
+            top: -20px;
+            width: 64px;
+            height: 64px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid rgba(#FFFFFF, 0.23);
+            border-radius: 50%;
+            color: $orange;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 23px;
+            text-align: center;
+            @media (max-width: 800px) {
+              display: none;
+            }
+          }
+        }
+        &_input, &_textarea {
+          background-color: $application_black;
+          outline: none;
+          border: none;
+          &::placeholder {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 35px;
+            letter-spacing: -0.01em;
+            color: rgba(#FFFFFF, 0.3);
+          }
+        }
+        &_input {
+          height: 35px;
+        }
+        &_textarea {
+          height: 70px;
+        }
+      }
+      &_button {
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12);
+        border-radius: 111px;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: $orange;
+        padding-top: 20px;
+        padding-bottom: 16px;
+      }
+    }
+  }
+}

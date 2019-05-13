@@ -16,28 +16,41 @@ h1 {
   letter-spacing: -0.02em;
   color: #222; }
 
+h2 {
+  font-size: 40px;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  letter-spacing: -0.02em; }
+
 p {
   font-size: 16px;
   color: #4A4556;
   line-height: 26px; }
 
+label {
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: -0.01em; }
+
 body, body * {
   margin: 0;
   padding: 0; }
 
+body {
+  background-color: #F7F5FA; }
+
 .main-slide {
   width: 100%;
-  height: auto; }
-  .main-slide_img {
-    width: 100%;
-    height: auto;
-    -o-object-fit: cover;
-       object-fit: cover; }
+  height: calc(100vw / 2.4);
+  background: url(9e38f122da159f2fa31c235b5cb8c141.png);
+  background-size: cover; }
 
 .header {
   text-align: center;
   padding-bottom: 142px;
-  padding-top: 165px; }
+  padding-top: 165px;
+  background-color: #fff; }
   .header .main-title {
     margin-bottom: 24px; }
   .header .application-action {
@@ -54,19 +67,223 @@ body, body * {
       margin-right: auto; }
       .header .application-action_link_union {
         position: absolute;
-        border-radius: 50%;
+        border-radius: 111px;
         background-color: rgba(135, 135, 135, 0.05);
         left: -46px;
-        z-index: -1;
+        z-index: 1;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
+        padding-left: 20px;
         align-items: center;
         width: 54px;
-        height: 54px; }
+        height: 54px;
+        box-sizing: border-box;
+        transition: all ease-in 500ms; }
         .header .application-action_link_union_img {
           width: 14px;
           height: 14px; }
+      .header .application-action_link:hover .application-action_link_union, .header .application-action_link:active .application-action_link_union, .header .application-action_link:focus .application-action_link_union, .header .application-action_link .application-action:hover .application-action_link_union, .header .application-action_link .header .application-action_link_union:hover .application-action_link_union {
+        width: 236px; }
 
 .qualities {
-  background-color: #F7F5FA; }
+  background-color: #F7F5FA;
+  width: 100%; }
+  .qualities_points {
+    background-color: #FFF;
+    width: 80%;
+    max-width: 972px;
+    margin-left: auto;
+    margin-right: auto;
+    top: -99px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap; }
+    @media (max-width: 600px) {
+      .qualities_points {
+        top: -25px; } }
+  .qualities_point {
+    padding: 50px 70px 61px 60px;
+    box-sizing: border-box;
+    width: 50%;
+    border: 1px solid #EDEDED; }
+    .qualities_point_header {
+      font-size: 12px;
+      line-height: 19px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #F47821;
+      margin-bottom: 12px; }
+    .qualities_point_text {
+      font-size: 24px;
+      line-height: 30px;
+      letter-spacing: -0.03em; }
+    .qualities_point:first-child {
+      padding-right: 89px; }
+    @media (min-width: 768px) {
+      .qualities_point:nth-child(2-nd) {
+        margin-left: -1px; } }
+    @media (max-width: 767px) {
+      .qualities_point {
+        width: 100%; } }
+
+.we-are {
+  padding-top: 80px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  background-color: #fff; }
+  .we-are_inner {
+    width: 90%;
+    max-width: 773px; }
+    .we-are_inner_header {
+      margin-bottom: 24px;
+      text-align: center; }
+
+.advantages {
+  padding-top: 120px;
+  padding-bottom: 160px; }
+  .advantages_inner_header {
+    text-align: center;
+    margin-bottom: 60px; }
+  .advantages_inner_points {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    max-width: 1140px; }
+    @media (max-width: 768px) {
+      .advantages_inner_points {
+        flex-direction: column;
+        align-items: center; } }
+    .advantages_inner_points_point {
+      max-width: 500px; }
+      @media (max-width: 854px) {
+        .advantages_inner_points_point:first-child .advantages_inner_points_point_header {
+          margin-bottom: 0; } }
+      @media (min-width: 769px) {
+        .advantages_inner_points_point:nth-child(2) {
+          margin-left: 6.2%;
+          margin-right: 5.7%; } }
+      .advantages_inner_points_point_header {
+        font-size: 20px;
+        line-height: 25px;
+        color: #000000;
+        margin-bottom: 22px; }
+        @media (max-width: 1005px) {
+          .advantages_inner_points_point_header {
+            font-size: 17px; } }
+      .advantages_inner_points_point_hr {
+        width: 24px;
+        border: none;
+        border-bottom: 2px solid #F47821;
+        margin-bottom: 27px; }
+      .advantages_inner_points_point_img {
+        width: 52px;
+        height: 52px;
+        margin-bottom: 20px; }
+
+.application {
+  background-color: #161616;
+  padding-top: 100px;
+  padding-bottom: 120px; }
+  .application_inner {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .application_inner_header {
+      margin-bottom: 82px; }
+    .application_inner_form {
+      counter-reset: input;
+      max-width: 575px;
+      width: 75%; }
+      .application_inner_form_input-wrapper {
+        margin-bottom: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(247, 248, 250, 0.1); }
+        .application_inner_form_input-wrapper:last-child {
+          margin-bottom: 60px; }
+        .application_inner_form_input-wrapper_label {
+          margin-bottom: 24px;
+          position: relative; }
+          .application_inner_form_input-wrapper_label::before {
+            counter-increment: input;
+            content: counter(input);
+            position: absolute;
+            left: -92px;
+            top: -20px;
+            width: 64px;
+            height: 64px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid rgba(255, 255, 255, 0.23);
+            border-radius: 50%;
+            color: #F47821;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 23px;
+            text-align: center; }
+            @media (max-width: 800px) {
+              .application_inner_form_input-wrapper_label::before {
+                display: none; } }
+        .application_inner_form_input-wrapper_input, .application_inner_form_input-wrapper_textarea {
+          background-color: #161616;
+          outline: none;
+          border: none; }
+          .application_inner_form_input-wrapper_input::-webkit-input-placeholder, .application_inner_form_input-wrapper_textarea::-webkit-input-placeholder {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 35px;
+            letter-spacing: -0.01em;
+            color: rgba(255, 255, 255, 0.3); }
+          .application_inner_form_input-wrapper_input::-moz-placeholder, .application_inner_form_input-wrapper_textarea::-moz-placeholder {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 35px;
+            letter-spacing: -0.01em;
+            color: rgba(255, 255, 255, 0.3); }
+          .application_inner_form_input-wrapper_input:-ms-input-placeholder, .application_inner_form_input-wrapper_textarea:-ms-input-placeholder {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 35px;
+            letter-spacing: -0.01em;
+            color: rgba(255, 255, 255, 0.3); }
+          .application_inner_form_input-wrapper_input::-ms-input-placeholder, .application_inner_form_input-wrapper_textarea::-ms-input-placeholder {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 35px;
+            letter-spacing: -0.01em;
+            color: rgba(255, 255, 255, 0.3); }
+          .application_inner_form_input-wrapper_input::placeholder, .application_inner_form_input-wrapper_textarea::placeholder {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 35px;
+            letter-spacing: -0.01em;
+            color: rgba(255, 255, 255, 0.3); }
+        .application_inner_form_input-wrapper_input {
+          height: 35px; }
+        .application_inner_form_input-wrapper_textarea {
+          height: 70px; }
+      .application_inner_form_button {
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.12);
+        border-radius: 111px;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #F47821;
+        padding-top: 20px;
+        padding-bottom: 16px; }
 

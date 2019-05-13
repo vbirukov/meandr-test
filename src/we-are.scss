@@ -1,0 +1,17 @@
+@import "variables";
+
+.we-are {
+  padding-top: 80px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  &_inner {
+    width: 90%;
+    max-width: 773px;
+    &_header {
+      margin-bottom: 24px;
+      text-align: center;
+    }
+  }
+}

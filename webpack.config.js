@@ -14,6 +14,9 @@ module.exports = {
             }
         })
     ],
+    devServer: {
+        contentBase: './dist'
+        },
     module: {
         rules: [
             {

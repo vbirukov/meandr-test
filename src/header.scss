@@ -4,6 +4,7 @@
   text-align: center;
   padding-bottom: 142px;
   padding-top: 165px;
+  background-color: #fff;
   .main-title {
     margin-bottom: 24px;
   }
@@ -21,18 +22,28 @@
       margin-right: auto;
       &_union {
         position: absolute;
-        border-radius: 50%;
+        border-radius: 111px;
         background-color: rgba($union-gray, 0.05);
         left: -46px;
-        z-index: -1;
+        z-index: 1;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
+        padding-left: 20px;
         align-items: center;
         width: 54px;
         height: 54px;
+        box-sizing: border-box;
+        transition: all ease-in 500ms;
         &_img {
           width: 14px;
           height: 14px;
+        }
+
+      }
+      $link: &;
+      &:hover, &:active, &:focus, .application-action:hover, #{$link}_union:hover {
+        .application-action_link_union {
+          width: 236px;
         }
       }
     }
