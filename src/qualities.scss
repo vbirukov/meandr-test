@@ -43,6 +43,9 @@ $gray-border: 1px solid #EDEDED;
         margin-left: -1px;
       }
     }
+    @media (max-width: 500px) {
+      padding-right: 50px !important;
+    }
     @media (max-width: 767px) {
       width: 100%;
     }

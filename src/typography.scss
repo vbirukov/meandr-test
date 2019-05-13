@@ -1,5 +1,19 @@
 @import "variables";
 
+@font-face {
+  font-family: "DIN Pro";
+  src: url(./fonts/DINpro.eot);
+}
+
+@font-face {
+  font-family: "DIN Pro";
+  src: url(./fonts/DINpro.ttf) format("opentype");
+}
+
+body * {
+  font-family: "DIN Pro", sans-serif;
+}
+
 a {
   text-decoration: none;
   color: $black;

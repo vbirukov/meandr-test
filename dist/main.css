@@ -234,7 +234,8 @@ body {
         .application_inner_form_input-wrapper_input, .application_inner_form_input-wrapper_textarea {
           background-color: #161616;
           outline: none;
-          border: none; }
+          border: none;
+          color: rgba(255, 255, 255, 0.3); }
           .application_inner_form_input-wrapper_input::-webkit-input-placeholder, .application_inner_form_input-wrapper_textarea::-webkit-input-placeholder {
             font-style: normal;
             font-weight: normal;
@@ -286,4 +287,9 @@ body {
         color: #F47821;
         padding-top: 20px;
         padding-bottom: 16px; }
+      .application_inner_form .form_error {
+        display: none;
+        color: red; }
+      .application_inner_form .form_error_show {
+        display: block; }
 
